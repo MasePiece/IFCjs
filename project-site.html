@@ -14,12 +14,12 @@
     <nav class="nav-bar"></nav>
     <main class="main-wrapper">
         <div class="btn-container">
-            <div class="btn">+ Unit</div>
+            <button class="btn" id="add-unit">+ Unit</button>
             <div class="btn">Filter</div>
         </div>
         <div class="content-container">
-            <div class="tile-wrapper">
-                <div class="tile tile-project">
+            <div class="tile-wrapper" id="unit-tiles-container">
+                <div class="tile tile-project" id="project-tile">
                     <div class="tile-edit-icon">Edit</div>
                     <h1>Project Name</h1>
                     <p>Location</p>
@@ -27,12 +27,14 @@
                     <p>Project Type</p>
                     <p>Project Phase</p>
                 </div>
-                <div class="tile unit-tile">
-                    <div class="tile-edit-icon">Edit</div>
-                    <p>ID</p>
-                    <p>Unit Category</p>
-                    <p>Unit Type</p>
-                    <p>Quantity</p>
+                <div>
+                    <div class="tile unit-tile" id="unit-tile-template">
+                        <div class="tile-edit-icon">Edit</div>
+                        <p>ID</p>
+                        <p>Unit Category</p>
+                        <p>Unit Type</p>
+                        <p>Quantity</p>
+                    </div>
                 </div>
             </div>
             <div class="site-map">
@@ -41,5 +43,6 @@
         </div>
     </main>
     <footer></footer>
+    <script src="./js/functions.js"></script>
 </body>
 </html>
