@@ -1,0 +1,51 @@
+/* Variables */
+:root {
+  /* Font Sizes */
+  --fs-xs: 0.8rem;
+  --fs-s: 0.9rem;
+  --fs-m: 1.15rem;
+  --fs-l: 1.5rem;
+  --fs-xl: 2.3rem;
+  /* Colors */  
+  --clr-background: #F6F8FD;
+  --clr-on-background-container: #FFFFFF;
+  --clr-on-background-primary: #8A95AD;
+  --clr-on-background-secondary: #C8CFDF;
+  --clr-border: #EBEFF7;
+  --clr-accent: #3655F2;
+  --clr-gradient-light: #5A8BFF;
+  --clr-gradient-dark: #2C66FE;
+  --clr-on-accent: #FFFFFF;
+  --clr-shadow: rgba(0, 0, 0, 0.1);
+  /* Borders */
+  --border-width: 2px;
+  --border-style: solid:
+  --border-radius: 5px;
+  /* Header */
+  --clr-header: var(--clr-primary);
+  /* Footer */
+  --clr-footer: var(--clr-primary);
+  /* Page */
+  --clr-page: var(--clr-background);
+  /* Buttons */
+}
+
+/* Global Element Styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+body {
+  font-family: 'Roboto',sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 100;
+}

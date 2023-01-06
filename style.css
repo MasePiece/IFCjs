@@ -1,0 +1,164 @@
+/* Variables */
+:root {
+  /* Font Sizes */
+  --fs-xs: 0.8rem;
+  --fs-s: 0.9rem;
+  --fs-m: 1.15rem;
+  --fs-l: 1.5rem;
+  --fs-xl: 2.3rem;
+  /* Colors */
+  --clr-background: #F6F8FD;
+  --clr-on-background-container: #FFFFFF;
+  --clr-on-background-primary: #8A95AD;
+  --clr-on-background-secondary: #C8CFDF;
+  --clr-border: #EBEFF7;
+  --clr-accent: #3655F2;
+  --clr-gradient-light: #5A8BFF;
+  --clr-gradient-dark: #2C66FE;
+  --clr-on-accent: #FFFFFF;
+  --clr-shadow: rgba(0, 0, 0, 0.1);
+  /* Borders */
+  --border-width: 2px;
+  --border-style: solid:
+  --border-radius: 5px;
+  /* Header */
+  --clr-header: var(--clr-primary);
+  /* Footer */
+  --clr-footer: var(--clr-primary);
+  /* Page */
+  --clr-page: var(--clr-background);
+  /* Buttons */
+}
+
+/* Global Element Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 100;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: var(--clr-background);
+}
+
+.nav-bar {
+  height: 6rem;
+  width: 100%;
+  background: var(--clr-on-background-container);
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--clr-border);
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1750px;
+  padding: 2rem 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--clr-border);
+  border-radius: 10px;
+  background: var(--clr-on-background-container);
+  text-align: center;
+}
+
+.content-container {
+  flex: 1;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 400px 1fr;
+}
+
+.site-map {
+  height: 100%;
+  padding: 1rem;
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--clr-border);
+  border-radius: 10px;
+  background: var(--clr-on-background-container);
+}
+
+.tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100%;
+  background: none;
+}
+
+.tile {
+  position: relative;
+  height: 200px;
+  padding: 1rem;
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--clr-border);
+  border-radius: 10px;
+  background: var(--clr-on-background-container);
+  transition: 0.25s ease-in-out;
+}
+.tile:hover {
+  transform: scale(1.05);
+}
+.tile-edit-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--clr-accent);
+  color: var(--clr-on-accent);
+}
+.tile-project {
+  background-image: linear-gradient(to bottom right, var(--clr-gradient-dark), var(--clr-gradient-light));
+  color: var(--clr-on-accent);
+}
+
+.BIM-viewer {
+  flex: 1;
+  padding: 1rem;
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--clr-border);
+  border-radius: 10px;
+  background: var(--clr-on-background-container);
+}/*# sourceMappingURL=style.css.map */
